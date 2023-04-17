@@ -1,0 +1,239 @@
+@import "reset.css";
+
+/* font */
+
+@font-face {
+    font-family: "pretendard";
+    font-weight: 600;
+    font-display: swap;
+    src: local("Pretendard Bold"),
+      url("../fonts/Pretendard-Bold.woff") format("woff"),
+      url("../fonts/Pretendard-Bold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "pretendard";
+    font-weight: 500;
+    font-display: swap;
+    src: local("Pretendard Medium"),
+      url("../fonts/Pretendard-Medium.woff") format("woff"),
+      url("../fonts/Pretendard-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "pretendard";
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard Regular"),
+      url("../fonts/Pretendard-Regular.woff") format("woff"),
+      url("../fonts/Pretendard-Regular.woff2") format("woff2");
+  }
+
+body{
+    background-color: #121212 ;
+    color: #fff;
+    font-family: pretendard, "sans-serif";
+    font-weight: 400;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+a{
+    color: #fff;
+}
+strong{
+    font-weight: 500;
+}
+h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+.h_f_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+    box-sizing: border-box;
+}
+.inner{
+    padding: 0 250px;
+    margin: 0 auto;
+}
+section{
+    margin-bottom: 300px;
+    max-width: 1920px;
+}
+
+/* top_btn */
+.top_btn{
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    background-color: #E8CB32;
+    right: 100px;
+    bottom: 100px;
+    border-radius: 30px;
+    z-index: 20;
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+.top_btn.on{
+    opacity: 1;
+}
+/* header */
+
+header{
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+header.active{
+    
+}
+#Logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 16px 0;
+}
+.main_menu{
+    display: flex;
+}
+.main_menu li{
+    line-height: 80px;
+}
+.main_menu li a{
+    position: relative;
+}
+.main_menu li a{
+    padding: 32px 40px;
+}
+.main_menu li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.main_menu li a:hover:after{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+/* work_footer */
+.work_footer{
+    width: 100%;
+}
+
+.video{
+    overflow: hidden;
+    height: 680px;
+    position: relative;
+}
+.play_btn{
+    width: 287px;
+    height: 287px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%,0);
+}
+.play_btn::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 57px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../images/work-story-play.png)no-repeat center center/cover;
+}
+.play_btn span{
+    display: block;
+    width: 287px;
+    height: 287px;
+    background: url(../images/work-stroy-txt.png);
+    animation: playTxt 5s linear infinite;
+}
+@keyframes playTxt {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.video video{
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+}
+.work_with_us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 343px 0;
+}
+.work_with_us span{
+    font-size: 160px;
+    font-weight: 600;
+    position: relative;
+    cursor:default;
+}
+.work_with_us span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 0%;
+    height: 6px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+.work_with_us span:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+footer .h_f_inner{
+    margin-bottom: 34px;
+}
+address{
+    display: flex;
+    align-items: center;
+}
+.tel_fax{
+    margin: 0 20px;
+}
+.privacy_company{
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+.privacy_company a{
+    display: flex;
+    align-items: center;
+}
+.privacy_company a:first-child::after{
+    content: "|";
+    margin: 0 5px;
+}
+.privacy_company a:nth-child(2)::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/Capa_1.png)no-repeat center center/cover;
+}
+.copy{
+    font-weight: 600;
+}

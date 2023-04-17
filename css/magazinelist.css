@@ -1,0 +1,138 @@
+.banner_txt_wrap {
+  padding-top: 300px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner_txt_wrap h2 {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+.banner_txt_wrap p {
+  width: 573px;
+}
+.banner_page_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.brand_crumb {
+  top: 100px;
+  right: 250px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.brand_crumb li:first-child a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/home_icon.png) no-repeat center/cover;
+}
+.brand_crumb li:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/bread_crumb_arrow.png) no-repeat center/cover;
+  margin: 0 15px;
+}
+.brand_crumb li a {
+  font-size: 16px;
+  color: #757575;
+}
+.banner_title {
+  font-size: 250px;
+  font-weight: 600;
+  color: #151515;
+}
+
+section {
+  padding-top: 300px;
+  width: 1440px;
+  margin: 0 auto;
+}
+section h1 {
+  font-size: 24px;
+}
+section > div {
+  display: inline-block;
+  width: 300px;
+}
+.magazines {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.magazine {
+  width: 340px;
+  height: 380px;
+  border-radius: 10px;
+}
+
+.magazine .magazine-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.magazine_text {
+  margin-top: 10px;
+  line-height: 27px;
+}
+.magazine_text p {
+  color: #a9a9a9;
+  font-size: 14px;
+}
+.magazine_text ul {
+  display: flex;
+  /* gap: 10px; */
+}
+.magazine_text ul li {
+  color: #a9a9a9;
+}
+.contents_data {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.magazine .contents_data li {
+  color: #5e5e5e;
+  font-size: 14px;
+}
+.contents_data li::after {
+  content: "|";
+  margin: 0 5px;
+}
+.contents_data li:last-child:after {
+  content: "";
+}
+.pagination {
+  width: 100%;
+  margin: 0 auto;
+}
+.btn_number {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.btn_number li {
+  margin: 0 20px;
+  line-height: 40px;
+}
+.btn_number li a {
+  color: #a9a9a9;
+}
+.btn_number a.active {
+  background: #e8cb32;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+}

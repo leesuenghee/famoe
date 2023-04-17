@@ -1,0 +1,234 @@
+.banner {
+  height: 640px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner_txt_wrap {
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner_txt_wrap h2 {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+.banner_txt_wrap p {
+  width: 578px;
+  line-height: 27px;
+}
+.banner_page_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.brand_crumb {
+  top: 100px;
+  right: 250px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.brand_crumb li:first-child a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/home_icon.png) no-repeat center/cover;
+}
+.brand_crumb li:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/bread_crumb_arrow.png) no-repeat center/cover;
+  margin: 0 15px;
+}
+.brand_crumb li a {
+  font-size: 16px;
+  color: #757575;
+}
+.banner_title {
+  font-size: 250px;
+  font-weight: 600;
+  color: #151515;
+}
+/* #fonts */
+#fonts {
+  width: 1440px;
+  padding: 362px 0 0 0;
+  text-align: center;
+}
+#fonts > div {
+  width: 100vw;
+  height: 750px;
+  z-index: 2;
+}
+#fonts h2 {
+  font-size: 128px;
+  text-transform: uppercase;
+}
+/* rowSlide */
+#rowSlide {
+  margin: 0 auto;
+  position: relative;
+}
+#rowSlide .box {
+  width: 960px;
+  height: 912px;
+  overflow: hidden;
+  z-index: -1;
+}
+#rowSlide .box .bg_1 {
+  overflow: hidden;
+  width: 960px;
+  height: 912px;
+  background: url(../images/about.png) no-repeat center center;
+  background-size: cover;
+  margin: 0;
+}
+#rowSlide .rowFlex {
+  display: flex;
+  align-items: flex-end;
+}
+#rowSlide .rowFlex img {
+  width: 960px;
+  height: 100%;
+}
+#rowSlide .rowFlex span {
+  margin-left: 255px;
+  width: 459px;
+}
+#rowSlide .rowFlex:last-child span {
+  margin: 0px 119px 100px 255px;
+}
+#rowSlide .rowFlex span h3,
+#business .mamo h3,
+#colSlide .story h3 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+#rowSlide .rowFlex span h3::after,
+#business .mamo h3::after,
+#colSlide .story h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #e8cb32;
+  margin: 10px 0;
+}
+#rowSlide .rowFlex span p {
+  line-height: 27px;
+}
+#rowSlide .rowFlex .crate_01 {
+  position: relative;
+  /* width: 50%; */
+  height: 100%;
+  background-color: #121212;
+}
+
+/* business */
+#business {
+  background-color: #121212;
+  margin-bottom: 0;
+}
+#business .bc {
+  padding: 300px 0;
+  width: 1440px;
+  margin: 0 auto;
+}
+#business .mamo {
+  display: flex;
+  justify-content: center;
+}
+#business .mamo h3 {
+  margin-right: 125px;
+}
+
+#business .moa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 81px;
+}
+#business .moa div {
+  position: relative;
+  margin: 0 20px 20px 0;
+}
+#business .moa > div img {
+  width: 680px;
+  height: 490px;
+}
+#business .moa .hovers::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.8);
+  opacity: 0;
+  transition: 0.4s;
+}
+#business .moa .hovers:hover::before {
+  opacity: 1;
+}
+#business .moa span {
+  position: absolute;
+  bottom: 0%;
+  width: 340px;
+  margin: 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#business .moa > div:hover span {
+  opacity: 1;
+  bottom: 10%;
+}
+#business .moa span h4 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+#business .moa span p {
+  line-height: 27px;
+}
+
+/* colSlide */
+#colSlide .story {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 81px;
+}
+#colSlide .story p {
+  width: 1080px;
+  line-height: 27px;
+  margin-left: 90px;
+}
+.swiper {
+  width: 100%;
+  height: 840px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination {
+  font-size: 24px;
+  font-weight: 600;
+}

@@ -1,0 +1,127 @@
+.banner {
+  height: 640px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner_txt_wrap {
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner_txt_wrap h2 {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+.banner_txt_wrap p {
+  width: 573px;
+  line-height: 27px;
+}
+.banner_page_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.brand_crumb {
+  top: 100px;
+  right: 250px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.brand_crumb li:first-child a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/home_icon.png) no-repeat center/cover;
+}
+.brand_crumb li:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/bread_crumb_arrow.png) no-repeat center/cover;
+  margin: 0 15px;
+}
+.brand_crumb li a {
+  font-size: 16px;
+  color: #757575;
+}
+.banner_title {
+  font-size: 250px;
+  font-weight: 600;
+  color: #151515;
+}
+
+/* designer */
+#designer {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 250px 0;
+  /* display: flex; */
+}
+#designer .abc {
+  /* width: 784px; */
+  margin: 0 auto;
+}
+#designer .abc::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin: 50px 0;
+}
+#designer .abc ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 118px;
+  flex-wrap: wrap;
+}
+.designers {
+  width: 1440px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.designers li {
+  position: relative;
+}
+.designers li p {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.designers li > div {
+  width: 100%;
+  height: 100%;
+}
+.designers li > .blacks::before {
+  content: "";
+  display: inline-block;
+  background-color: #333333;
+  opacity: 0.5;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  transition: 0.4s;
+}
+.designers li:hover > .blacks::before {
+  height: 10%;
+}
+.designers li:hover p {
+  opacity: 1;
+  bottom: 3%;
+}
+.abc li a.active {
+  color: #e8cb32;
+  font-weight: 600;
+}
